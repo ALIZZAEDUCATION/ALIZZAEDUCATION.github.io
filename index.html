@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AL-IZZA EDUCATION | Learn Skills. Build Your Future.</title>
+<meta name="description" content="AL-IZZA EDUCATION offers job-oriented technical learning, project planning, Primavera P6, HSE, AutoCAD, pipeline and piping drawing, English speaking, computer skills and competitive exam preparation.">
+<style>
+:root{--navy:#102a43;--blue:#1769aa;--gold:#f4b400;--light:#f5f8fb;--dark:#17202a;--white:#fff}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;color:var(--dark);line-height:1.6;background:#fff}
+a{text-decoration:none;color:inherit}
+.container{width:min(1120px,92%);margin:auto}
+header{background:var(--navy);color:#fff;position:sticky;top:0;z-index:10;box-shadow:0 2px 10px #0002}
+.nav{min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{font-size:22px;font-weight:800;letter-spacing:.5px}
+.brand span{color:var(--gold)}
+nav{display:flex;gap:22px;align-items:center}
+nav a{font-weight:600;font-size:14px}
+nav a:hover{color:var(--gold)}
+.menu{display:none;font-size:28px;cursor:pointer}
+.hero{background:linear-gradient(135deg,#102a43 0%,#1769aa 100%);color:#fff;padding:82px 0}
+.hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:40px;align-items:center}
+.badge{display:inline-block;background:#ffffff18;border:1px solid #ffffff44;padding:7px 13px;border-radius:30px;margin-bottom:18px;font-size:13px}
+h1{font-size:clamp(38px,6vw,62px);line-height:1.05;margin-bottom:20px}
+.hero p{font-size:18px;max-width:700px;color:#e7f1fa}
+.buttons{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-block;padding:13px 21px;border-radius:7px;font-weight:700}
+.btn-primary{background:var(--gold);color:#17202a}
+.btn-outline{border:1px solid #fff;color:#fff}
+.hero-card{background:#fff;color:var(--dark);padding:28px;border-radius:16px;box-shadow:0 15px 40px #0003}
+.hero-card h3{color:var(--navy);margin-bottom:14px}
+.hero-card li{list-style:none;padding:9px 0;border-bottom:1px solid #eee}
+.hero-card li:last-child{border:0}
+section{padding:72px 0}
+.section-head{text-align:center;max-width:750px;margin:0 auto 38px}
+.section-head h2{font-size:34px;color:var(--navy);margin-bottom:10px}
+.section-head p{color:#596773}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:#fff;border:1px solid #e5e9ed;border-radius:13px;padding:25px;box-shadow:0 6px 20px #102a4310}
+.card .icon{font-size:32px;margin-bottom:10px}
+.card h3{color:var(--navy);margin-bottom:8px}
+.card p{color:#5c6873;font-size:15px}
+.alt{background:var(--light)}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}
+.about-box{background:var(--navy);color:#fff;padding:35px;border-radius:18px}
+.about-box h3{font-size:28px;margin-bottom:14px}
+.about ul{margin-top:18px;padding-left:20px}
+.about li{margin:9px 0}
+.cta{background:linear-gradient(135deg,#f4b400,#ffd45c);text-align:center}
+.cta h2{font-size:35px;color:#17202a;margin-bottom:10px}
+.cta p{margin-bottom:20px}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:25px}
+.contact-card{background:var(--light);padding:28px;border-radius:14px}
+.contact-card h3{color:var(--navy);margin-bottom:12px}
+footer{background:#0b1d2e;color:#c9d6e1;padding:30px 0;text-align:center;font-size:14px}
+.small{font-size:13px;color:#71808d;margin-top:7px}
+@media(max-width:800px){
+ nav{display:none;position:absolute;left:0;right:0;top:70px;background:var(--navy);padding:15px 5%;flex-direction:column;align-items:flex-start}
+ nav.show{display:flex}.menu{display:block}
+ .hero{padding:60px 0}.hero-grid,.about,.contact-grid{grid-template-columns:1fr}
+ .grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:540px){.grid{grid-template-columns:1fr}section{padding:55px 0}.hero-card{margin-top:10px}}
+</style>
+</head>
+<body>
+<header>
+<div class="container nav">
+<a class="brand" href="#home">AL-IZZA <span>EDUCATION</span></a>
+<div class="menu" onclick="document.querySelector('nav').classList.toggle('show')">☰</div>
+<nav>
+<a href="#home">Home</a><a href="#courses">Courses</a><a href="#students">Students</a><a href="#about">About</a><a href="#contact">Contact</a>
+</nav>
+</div>
+</header>
+
+<main>
+<section class="hero" id="home">
+<div class="container hero-grid">
+<div>
+<div class="badge">SKILLS • EDUCATION • CAREER PREPARATION</div>
+<h1>Learn Skills.<br>Build Your Future.</h1>
+<p>Job-oriented technical learning and academic preparation for students and professionals — with practical focus for India and abroad.</p>
+<div class="buttons">
+<a class="btn btn-primary" href="#courses">Explore Courses</a>
+<a class="btn btn-outline" href="#contact">Contact Us</a>
+</div>
+</div>
+<div class="hero-card">
+<h3>What You Can Learn</h3>
+<ul>
+<li>✓ Project Planning & Scheduling</li>
+<li>✓ Primavera P6</li>
+<li>✓ HSE / Safety</li>
+<li>✓ AutoCAD & Project Drawings</li>
+<li>✓ Pipeline & Piping Drawings</li>
+<li>✓ Computer & English Speaking</li>
+<li>✓ Competitive Exam Preparation</li>
+</ul>
+</div>
+</div>
+</section>
+
+<section id="courses">
+<div class="container">
+<div class="section-head">
+<h2>Our Learning Programs</h2>
+<p>Practical, career-focused learning for working professionals, job seekers and school students.</p>
+</div>
+<div class="grid">
+<div class="card"><div class="icon">📊</div><h3>Project Planning & Scheduling</h3><p>Learn planning, scheduling, progress monitoring, reporting and project controls with practical project-based concepts.</p></div>
+<div class="card"><div class="icon">🗓️</div><h3>Primavera P6</h3><p>Learn WBS, activities, relationships, baseline, updates, critical path, progress and project reporting.</p></div>
+<div class="card"><div class="icon">🦺</div><h3>HSE & Safety</h3><p>Build practical understanding of site safety, toolbox talks, PPE, inspections and HSE documentation.</p></div>
+<div class="card"><div class="icon">📐</div><h3>AutoCAD & Drawings</h3><p>Learn project drawing, drafting fundamentals and preparation of as-built drawings.</p></div>
+<div class="card"><div class="icon">🔧</div><h3>Pipeline & Piping</h3><p>Learn concepts related to cross-country pipeline, process piping and station piping drawings and documentation.</p></div>
+<div class="card"><div class="icon">💻</div><h3>Computer & English</h3><p>Improve basic computer knowledge, MS Office skills and practical English speaking for study and work.</p></div>
+</div>
+</div>
+</section>
+
+<section class="alt" id="students">
+<div class="container">
+<div class="section-head">
+<h2>School & Competitive Exam Preparation</h2>
+<p>Foundation learning and entrance-exam preparation with emphasis on English, Mathematics, Science and reasoning skills.</p>
+</div>
+<div class="grid">
+<div class="card"><div class="icon">🎓</div><h3>JMI Preparation</h3><p>Preparation support for Jamia Millia Islamia entrance examinations for relevant school classes.</p></div>
+<div class="card"><div class="icon">🏫</div><h3>AMU Preparation</h3><p>Preparation support for Aligarh Muslim University school entrance examinations for relevant classes.</p></div>
+<div class="card"><div class="icon">🌟</div><h3>Navodaya / JNV</h3><p>Preparation for Class 6 and Class 9 entrance with focus on mental ability, arithmetic and language.</p></div>
+<div class="card"><div class="icon">📚</div><h3>Classes 1–7</h3><p>Academic learning support with a strong foundation in core school subjects.</p></div>
+</div>
+</div>
+</section>
+
+<section id="about">
+<div class="container about">
+<div>
+<div class="section-head" style="text-align:left;margin:0 0 15px">
+<h2>About AL-IZZA EDUCATION</h2>
+<p>A learning platform designed to connect practical technical skills with education and career preparation.</p>
+</div>
+<ul>
+<li>Practical and job-oriented learning</li>
+<li>Technical skills for project-based careers</li>
+<li>Academic and competitive-exam preparation</li>
+<li>Suitable for beginners as well as working professionals</li>
+</ul>
+</div>
+<div class="about-box">
+<h3>Learn for a Better Career</h3>
+<p>Develop useful skills step by step — from basic computer and communication skills to technical project planning, HSE and engineering drawings.</p>
+</div>
+</div>
+</section>
+
+<section class="cta">
+<div class="container">
+<h2>Start Learning Today</h2>
+<p>Choose a program according to your education, career goal and current skill level.</p>
+<a class="btn" style="background:#102a43;color:#fff" href="#contact">Enquire Now</a>
+</div>
+</section>
+
+<section id="contact">
+<div class="container">
+<div class="section-head">
+<h2>Contact AL-IZZA EDUCATION</h2>
+<p>For course details, admission enquiries and career-oriented learning information.</p>
+</div>
+<div class="contact-grid">
+<div class="contact-card"><h3>📞 Phone / WhatsApp</h3><p>Add your mobile/WhatsApp number here.</p><p class="small">The button can be connected directly to WhatsApp after your number is provided.</p></div>
+<div class="contact-card"><h3>📍 Location</h3><p>Add your centre/location details here.</p><p class="small">You can also add Google Maps location later.</p></div>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="container">
+<strong>AL-IZZA EDUCATION</strong>
+<p>Technical Skills • Academic Learning • Career Preparation</p>
+<p class="small">© 2026 AL-IZZA EDUCATION. All rights reserved.</p>
+</div>
+</footer>
+</body>
+</html>
